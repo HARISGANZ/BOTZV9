@@ -18,7 +18,7 @@
 ### Install ⬇️
 
 ```bash
-> git clone https://github.com/HARISGANZ/Botkoclok
+> git clone https://github.com/HARISGANZ/BOTZV9
 > cd Hanz
 > npm i
 ```
