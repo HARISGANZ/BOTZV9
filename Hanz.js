@@ -1698,7 +1698,7 @@ reply(mess.error.stick)
 .on('end', function () {
 console.log('Finish')
 buffer = fs.readFileSync(ran)
-costum(buffer, sticker, Verived, `Jangan Lupa Subscribe Zero YT7`)
+costum(buffer, sticker, Verived, `Sticker`)
 fs.unlinkSync(media)
 fs.unlinkSync(ran)
 })
@@ -1719,7 +1719,7 @@ console.log(`Started : ${cmd}`)
 console.log(`Error : ${err}`)
 fs.unlinkSync(media)
 tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-reply(`❌ Gagal, pada saat mengkonversi ${tipe} ke stiker. pastikan untuk video yang dikirim tidak lebih dari 9 detik`)
+reply(`❌ Gagal`)
 })
 .on('end', function () {
 console.log('Finish')
@@ -1764,7 +1764,7 @@ exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 fs.unlinkSync(media)
 if (err) return reply(' Gagal, pada saat mengkonversi sticker ke gambar ')
 buffer = fs.readFileSync(ran)
-costum(buffer, image, Verived, `Jangan Lupa Subscribe Zero YT7`)
+costum(buffer, image, Verived, `Toimg`)
 fs.unlinkSync(ran)
 })
 break
@@ -1794,7 +1794,7 @@ ran = getRandom('.webp')
 exec(`ffmpeg -i ${anum} ${ran}`, (err) => {
 fs.unlinkSync(anum)
 buffer = fs.readFileSync(ran)
-Hanz.sendMessage(from, buffer, video, { quoted: ftrol, caption: 'Done... Jangan Lupa Subscribe Zero YT7' })
+Hanz.sendMessage(from, buffer, video, { quoted: ftrol, caption: 'Done...' })
 fs.unlinkSync(ran)
 })
 break
